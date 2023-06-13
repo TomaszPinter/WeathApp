@@ -4,7 +4,23 @@
     z-index: -1;
     inset: 50% auto auto 50%;
     translate: -50% -50%;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.weather {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+&__title {
+    color: $titleColor;
+    @include fluid-type (320px, 1920px, 36px, 60px);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0 0 40px 0;
 }
